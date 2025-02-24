@@ -8,11 +8,11 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Navigate replace to="/login" basename="/login-app"/>} />
+        <Route path="/" element={<Navigate replace to="/login-app" basename="/login-app"/>} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/landing" element={<Landing />} />
-        <Route path="*" element={<Navigate replace to="/login" />} /> {/* Handle invalid routes */}
+        <Route path="*" element={<Navigate replace to="/login-app" />} /> {/* Handle invalid routes */}
       </Routes>
     </Router>
   );
