@@ -18,7 +18,7 @@ const Login = () => {
     const user = users.find(
       (u) => u.username === credentials.username && u.password === credentials.password
     );
-
+  
     if (user) {
       localStorage.setItem("loggedInUser", JSON.stringify(user));
       navigate("/landing");
